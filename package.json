@@ -1,0 +1,36 @@
+{
+  "name": "sample-graphql",
+  "version": "1.0.0",
+  "description": "Sample GraphQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toprakerzurumluoglu.com/denene.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "api",
+    "rest",
+    "service",
+    "restful"
+  ],
+  "author": "Toprak ERZURUMLUOĞLU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toprakerzurumluoglu.com/denene/issues"
+  },
+  "homepage": "https://github.com/toprakerzurumluoglu.com/denene#readme",
+  "dependencies": {
+    "apollo-server-express": "^1.4.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.1.1",
+    "node-fetch": "^2.6.1",
+    "notarealdb": "^0.2.2"
+  }
+}

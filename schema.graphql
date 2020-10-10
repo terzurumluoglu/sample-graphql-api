@@ -1,0 +1,49 @@
+type Query {
+   users:[User]
+   user(userId:ID!):User
+}
+
+type User {
+   id:ID!
+   name:String
+   username:String
+   email:String
+   posts:[Post]
+}
+
+type Post {
+   id:ID!
+   title: String
+   body:String
+   userId:Int
+   comments:[Comment]
+}
+
+type Comment {
+   id:ID!
+   name:String
+   email:String
+   body:String
+   postId:Int
+}
+
+
+# type Query {
+#    users:[User]
+#    user(userId:ID!):User
+# }
+
+# type User {
+#    userId:ID!
+#    displayName:String
+#    email:String
+#    posts:[Post]
+#    test:String
+# }
+
+# type Post {
+#    id:ID!,
+#    title:String
+#    body:String
+#    userId:Float
+# }
