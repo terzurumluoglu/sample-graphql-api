@@ -7,10 +7,14 @@ const pathUser = 'user/';
 const pathPost = 'post/';
 const pathComment = 'comment/';
 const Query = {
-    users: () =>
-        fetch(url + pathUser).then(p => p.json()),
-    user: (root, args, context, info) =>
-        fetch(url + pathUser + args.userId).then(p => p.json())
+    users: async () => {
+        const data = await fetch(url + pathUser);
+        return data.json();
+    },
+    user: async (root, args, context, info) =>{
+        const data = await fetch(url + pathUser + args.userId);
+        return data.json();
+    }
 }
 
 const User = {
